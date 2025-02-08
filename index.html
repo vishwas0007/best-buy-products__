@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Buy Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header/Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Best Buy Products</div>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search for products...">
+                <ul id="search-suggestions"></ul>
+            </div>
+            <div class="cart">🛒 Cart</div>
+            <button id="admin-login-button">Admin Login</button>
+        </div>
+    </header>
+
+    <!-- Admin Login Section -->
+    <div id="admin-password-section">
+        <input type="password" id="admin-password" placeholder="Enter Admin Password">
+        <button id="admin-password-submit">Submit</button>
+        <p id="error-message"></p>
+    </div>
+
+    <!-- Admin Panel (Hidden by Default) -->
+    <div id="admin-section">
+        <h2>Add New Product</h2>
+        <form id="admin-form">
+            <input type="text" id="product-name" placeholder="Product Name" required>
+            <input type="number" id="product-price" placeholder="Price (₹)" required>
+            <input type="text" id="product-image" placeholder="Image URL" required>
+            <input type="text" id="product-link" placeholder="Affiliate Link" required>
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+
+    <!-- Product Section -->
+    <main>
+        <div id="products" class="product-grid">
+            <!-- Products will be loaded here dynamically -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Best Buy Products. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
